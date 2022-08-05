@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Blogify</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200;700;900&family=Roboto:wght@100&display=swap"
+        rel="stylesheet">
+        <link rel="icon" href="blog2.png" type="image/png">
+    <style>
+        body {
+
+            margin: 0;
+            padding: 0;
+            background: url('bg1.jpg');
+            background-repeat: no-repeat;
+            color: white;
+        }
+
+        .left {
+            display: inline-block;
+            /* border: 2px solid red; */
+            position: absolute;
+            left: 33px;
+            top: 20px;
+            color: black;
+        }
+
+        .left img {
+            width: 51px;
+        }
+
+        .left div {
+            font-family: 'Kanit', sans-serif;
+            text-align: center;
+            font-size: 10px;
+            font-weight: 600;
+        }
+
+        .mid {
+            display: block;
+            width: 53%;
+            margin: 20px 250px;
+            font-size: medium;
+            /* border: 2px solid green; */
+        }
+
+        .right {
+            position: absolute;
+            right: 33px;
+            top: 20px;
+            /* border: 2px solid yellow; */
+        }
+
+        .right .navbar {
+            display: inline-block;
+            
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 18px;
+        }
+
+        .navbar li a {
+            font-family: 'Kanit', sans-serif;
+            color: black;
+            padding: 33px 23px;
+            text-decoration: none;
+            font-weight: bolder;
+        }
+
+        .navbar li a:hover {
+            color: crimson;
+        }
+
+        .right .form-input {
+            padding: 1px 1px;
+            font-size: 13px;
+            border: 2px solid black;
+            border-radius: 6px;
+            margin: 0 15px 0 0;
+            font-family: 'Kanit', sans-serif;
+        }
+
+        .right button {
+
+            padding: 1px 3px;
+            font-size: 12px;
+            border-radius: 9px;
+            cursor: pointer;
+            color: black;
+            font-family: 'Kanit', sans-serif;
+        }
+
+        .right .form-input {}
+
+        .right button:hover {
+            color: white;
+        }
+
+        .container {
+            /* border: 2px solid blue; */
+            margin: 70px 250px;
+            padding: 2px 2px;
+            border-radius: 8px;
+            /* background-color: white; */
+            color: black;
+        }
+
+        .form-container {
+            /* border: 2px solid purple; */
+            margin: 90px 50px;
+            padding: 2px 2px;
+            border-radius: 5px;
+            width: 26%;
+
+        }
+
+        .form-elements input {
+            font-family: 'Kanit', sans-serif;
+    text-align: center;
+    display: block;
+    width: 320px;
+    padding: 2px;
+    border: 2px solid black;
+    margin: 3px auto;
+    border-radius: 8px;
+        }
+
+        .form-container {
+            font-family: 'Kanit', sans-serif;
+            text-align: center;
+            color: black;
+        }
+
+        .form-elements button {
+            display: block;
+            width: 20%;
+            margin: auto;
+            border-radius: 5px;
+        }
+
+        .blog-container {
+            /* border: 2px solid pink; */
+            margin: -354px 51px;
+            padding: 2px 2px;
+            width: 60%;
+            border-radius: 5px;
+            position: absolute;
+            right: 34px;
+            color: black;
+            font-family: 'Kanit', sans-serif;
+
+        }
+        .blog-container h3 a{
+            text-decoration: none;
+            color: black;
+            font-family: 'Kanit', sans-serif;
+            
+        }
+        .blog-container h3 a:hover{
+            color: crimson;
+        }
+        #abc{
+            height: 100px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <!-- logo -->
+        <div class="left">
+            <img src="iconmain.png" alt="">
+            <div>Blogify</div>
+        </div>
+        <!-- navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#">Archives</a></li>
+                <li><a href="#">Community</a></li>
+                <li><a href="#">Contact Us</a></li>
+                </ul>
+        </div>
+        <!-- search -->
+        <div class="right">
+            <input class="form-input" type="text" placeholder="Search Blog">
+            <button class="btn">Search</button>
+        </div>
+       
+        <div class="form-container">
+            <h4>Submit your blog here</h4>
+            <form action="noaction">
+                <div class="form-elements">
+                    <input type="text" name="" placeholder="Write here" id="abc">
+                </div>
+                <div class="form-elements">
+                    <input type="text" name="" placeholder="Enter your Name">
+                </div>
+                <div class="form-elements">
+                    <input type="text" name="" placeholder="Enter your Email id">
+                </div>
+                <button class="btn">Submit</button>
+            </form>
+        </div>
+        <div class="blog-container">
+            <h3><a href="blog1.html">Shivang Mehta shares his post covid snow leopard encounter.....</a></h3>
+            <p>
+                It was a 2 year break for my snow leopard expedition as COVID had put breaks on this most anticipated Himalayan odyssey. So what changed in Spiti this year? Nothing substantial as time normally stands still in this stunning landscape. The only development which was Spiti was finally had telecom connectivity so spending those weeks after weeks in the tough sub-zero conditions wasn’t pinching this time. Not that it did earlier but at times one does become home-sick when you spend prolonged months........
+            </p>
+            <h3><a href="blog2.html">War and Food Insecurity in Ukraine by Ida Rudolfsen</a></h3>
+            <P>
+                Ukrainians have fled their homes, lost their jobs and income, and faced disruptions of food production and
+        supply chains. In a recent survey in Ukraine, we asked a series of questions to explore food insecurity in more
+        detail. The findings paint a grave picture: one in three Ukrainians are currently food insecure. The findings
+        also indicate that those living in the east, those who are more exposed to attacks, and — not surprisingly —
+        those who are the least well off in the first place are the most endangered.......
+            </P>
+            <h3><a href="blog3.html">Droupadi Murmu Swearing-in Highlights:</a></h3>
+            <p>
+                Addressing the nation after being sworn in as the 15th President of India, Droupadi Murmu Monday stated that she was honoured to take charge at a time India is completing 75 years of Independence. She added that she was the first President to be born in independent India. She also said, “My election is.......
+            </p>
+            <h3><a href="blog4.html">U.K. Heat Wave: Britain Sets New Record :</a></h3>
+            <p>
+                Britain made meteorological history on Tuesday when temperatures in some places topped 40 degrees Celsius (104
+        degrees Fahrenheit) for the first time ever recorded in the United Kingdom, as a second straight day of
+        record-setting heat gripped parts of Europe.
+
+        Fires raged in France, Spain and even areas of London, as the hot, dry conditions strained emergency services
+        and brought misery to areas unaccustomed to such sweltering summers.......
+            </p>
+        </div>
+    </header>
+</body>
+
+</html>
